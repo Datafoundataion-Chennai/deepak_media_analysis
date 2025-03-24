@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import time
 
-API_KEY = "AIzaSyBkpmDbigwB5JOcDaJVVGcv_ywDM6NMrJw"
+API_KEY = "Use your OWN Youtube API Key"
 
 CHANNELS = {
     "ABN Telugu": "UC_2irx_BQR7RsBKmUV9fePQ",

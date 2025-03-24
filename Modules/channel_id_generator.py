@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "AIzaSyBkpmDbigwB5JOcDaJVVGcv_ywDM6NMrJw"
+API_KEY = "USE YOUR OWN YOUTUBE API KEY"
 USERNAME = "saregamasouth"
 
 url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&q={USERNAME}&type=channel&key={API_KEY}"
