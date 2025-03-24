@@ -1,0 +1,11 @@
+import requests
+
+API_KEY = "AIzaSyBkpmDbigwB5JOcDaJVVGcv_ywDM6NMrJw"
+USERNAME = "saregamasouth"
+
+url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&q={USERNAME}&type=channel&key={API_KEY}"
+
+response = requests.get(url).json()
+channel_id = response['items'][0]['id']['channelId']
+
+print("Channel ID:", channel_id)
