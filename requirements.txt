@@ -2,3 +2,6 @@ google.cloud bigquery
 pandas
 json
 re
+logging
+streamlit
+matplotlib.pyplot
