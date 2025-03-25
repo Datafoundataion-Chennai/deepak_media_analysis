@@ -115,7 +115,7 @@ def get_all_channel_data():
 
     return pd.DataFrame(all_videos)
 
- 
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\deepa\Documents\Media\credentials\media-content-analytics-1bbff619e78c.json"
 project_id = "media-content-analytics"
 dataset_id = "MediaContent"
 table_id = "youtube_data"
@@ -137,9 +137,6 @@ def upload_to_bigquery(df, project_id, dataset_id, table_id):
     job.result()
 
     print(f" Data uploaded to BigQuery table {dataset_id}.{table_id} successfully!")
-
-
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\deepa\Documents\Media\credentials\media-content-analytics-1bbff619e78c.json"
 
 
 df = get_all_channel_data()
