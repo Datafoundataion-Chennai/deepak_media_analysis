@@ -5,3 +5,4 @@ re
 logging
 streamlit
 matplotlib.pyplot
+pytest
